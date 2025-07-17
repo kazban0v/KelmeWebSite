@@ -60,7 +60,7 @@ const Search = ({ items }) => {
                 className={`absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 bg-white p-5 rounded-lg w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3`}
             >
                 <div className="flex items-center justify-between">
-                    <h2 className="text-xl font-bold">Search</h2>
+                    <h2 className="text-xl font-bold">Поиск</h2>
                     <button type="button" onClick={onSearchToggle}>
                         <XMarkIcon className="w-6 h-6" />
                     </button>
@@ -68,7 +68,7 @@ const Search = ({ items }) => {
                 <div className="relative mt-5">
                     <input
                         type="text"
-                        placeholder="Search for products..."
+                        placeholder="Поиск товаров..."
                         className="w-full p-2 border border-gray-300 rounded-lg pl-10"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
