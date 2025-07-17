@@ -1,63 +1,106 @@
-# Nike Store Ecommerce Web Application
+# Веб-приложение для электронной коммерции Kelme Store
 
-Welcome to the Nike Store Commerce Web Application, a cutting-edge e-commerce platform designed with modern technologies to provide you with a seamless shopping experience. This project is built using [Vite.js](https://vitejs.dev/) and styled with the powerful [TailwindCSS](https://tailwindcss.com/).
+Добро пожаловать в веб-приложение для электронной коммерции Kelme Store! Это современная платформа для онлайн-покупок, созданная с использованием передовых технологий для обеспечения удобного и приятного пользовательского опыта. Проект разработан на [Vite.js](https://vitejs.dev/) и стилизован с помощью [TailwindCSS](https://tailwindcss.com/).
 
-## Live Demo
+## Демонстрация
 
-Check out the live demo of the Nike Store: [Nike Store Demo](https://aditya-nike-store.netlify.app/)
+Вы можете ознакомиться с работающей версией приложения по следующей ссылке: [Kelme Store Demo](https://aditya-nike-store.netlify.app/)
 
-## Images
+## Скриншоты
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
+![Снимок экрана главной страницы](image.png)
+![Снимок экрана страницы товара](image1.png)
+![Снимок экрана корзины](image2.png)
+![Снимок экрана страницы "Нравится"](image3.png)
+![Снимок экрана поиска](image4.png)
 
-## Technologies Used
+## Технологии
 
-- [Vite.js](https://vitejs.dev/): A fast, opinionated web dev build tool that serves your code via native ES modules.
-- [TailwindCSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
-- [Redux Toolkit](https://redux-toolkit.js.org/): The official, opinionated, batteries-included toolset for efficient Redux development.
-- [React-Redux](https://react-redux.js.org/): The official React bindings for Redux to manage the application state.
-- [React-Hot-Toast](https://react-redux.js.org/): A declarative and customizable toast notification system for React.
+В этом проекте используются следующие технологии:
 
-## Features
+*   **[Vite.js](https://vitejs.dev/):** Быстрый и современный сборщик проектов, который использует нативные ES-модули.
+*   **[React](https://reactjs.org/):** Библиотека для создания пользовательских интерфейсов.
+*   **[TailwindCSS](https://tailwindcss.com/):** Утилитарный CSS-фреймворк для быстрой разработки пользовательских интерфейсов.
+*   **[Redux Toolkit](https://redux-toolkit.js.org/):** Официальный, рекомендуемый набор инструментов для эффективной разработки с использованием Redux.
+*   **[React-Redux](https://react-redux.js.org/):** Официальные привязки React для Redux для управления состоянием приложения.
+*   **[React Router](https://reactrouter.com/):** Стандартная библиотека для маршрутизации в React.
+*   **[React Hot Toast](https://react-hot-toast.com/):** Уведомления для React.
+*   **[Heroicons](https://heroicons.com/):** Набор красивых иконок в формате SVG.
 
-- **Responsive Design:** Our Nike Store is built with a responsive design, ensuring a seamless and enjoyable experience across various devices.
+## Функционал
 
-- **Shopping Cart:** Easily add your favorite shoes to the cart, review your selections, and proceed to checkout.
+*   **Адаптивный дизайн:** Приложение полностью адаптивно и отлично выглядит на любых устройствах.
+*   **Корзина:** Добавляйте товары в корзину, просматривайте их и оформляйте заказ.
+*   **Список желаний:** Создавайте список желаний, чтобы не потерять понравившиеся товары.
+*   **Поиск:** Удобный поиск по товарам с возможностью добавления в корзину и в избранное прямо из результатов поиска.
+*   **Страницы товаров:** Подробная информация о каждом товаре.
 
-- **Wishlist:** Create a wishlist of your desired shoes for future reference or purchase.
+## Начало работы
 
-- **Product Details:** Dive into the details of each shoe, including specifications, pricing, and customer reviews.
+Чтобы запустить проект локально, выполните следующие шаги:
 
-## Getting Started
+1.  **Клонируйте репозиторий:**
 
-To explore the Nike Store locally, follow these simple steps:
+    ```bash
+    git clone https://github.com/your-username/kelme-store.git
+    cd kelme-store
+    ```
 
-1. Clone the repository:
+2.  **Установите зависимости:**
 
-```bash
-git clone [repository_url]
-cd [project_directory]
+    ```bash
+    npm install
+    ```
+
+3.  **Запустите сервер для разработки:**
+
+    ```bash
+    npm run dev
+    ```
+
+    Теперь вы можете открыть [http://localhost:5173](http://localhost:5173) в вашем браузере.
+
+## Структура проекта
+
+```
+.
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── CartSlice.js
+│   │   ├── LikeSlice.js
+│   │   ├── SearchSlice.js
+│   │   └── Store.js
+│   ├── assets/
+│   ├── components/
+│   │   ├── cart/
+│   │   ├── like/
+│   │   ├── utils/
+│   │   ├── Cart.jsx
+│   │   ├── FlexContent.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Like.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Sales.jsx
+│   │   ├── Search.jsx
+│   │   └── Stories.jsx
+│   ├── context/
+│   ├── data/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── ...
 ```
 
-2. Install dependencies:
+## Вклад в проект
 
-```bash
-npm install
-# or
-yarn install
-```
+Мы приветствуем любой вклад в развитие проекта! Если вы хотите помочь, пожалуйста, сделайте форк репозитория и создайте pull request.
 
-3. Start the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Now you can visit [http://localhost:3000](http://localhost:3000) in your browser to experience the Nike Store locally.
-
-Feel free to explore, shop, and enjoy the modern and elegant design of our Nike Store Ecommerce Web Application! If you have any feedback or issues, please let us know. Happy shopping! 🛍️✨
+Спасибо за интерес к нашему проекту! Мы надеемся, что вам понравится работать с ним. 🛍️✨
